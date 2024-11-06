@@ -21,6 +21,14 @@ services:
     depends_on:
       - db
       - llm
+      - redis
+  redis:
+    image: 'bitnami/redis:7.2'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=no    # 禁止空密码
+      - REDIS_PASSWORD=muxistudio304  # 设置密码为 muxistudio304
+    ports:
+      - '6379:6379'    
   llm:
     image: "llm:v1"
     restart: "always"

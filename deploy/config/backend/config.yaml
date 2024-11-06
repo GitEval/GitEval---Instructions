@@ -11,7 +11,9 @@ llm:
 jwt:
   secretKey: "giteval" #替换成实际的
   timeout: 300
-
+cache:
+  addr: "redis:6379"
+  password: "123"
 
 
 
