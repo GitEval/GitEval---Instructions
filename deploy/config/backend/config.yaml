@@ -1,0 +1,21 @@
+## 示例配置
+app:
+  addr: "0.0.0.0:8080"
+github:
+  clientId: "your_clientId" #替换成实际的
+  clientSecret: "your_clientSecret" #替换成实际的
+data:
+  addr: "root:your_password@tcp(db:3306)/GitEval?charset=utf8mb4&parseTime=True&loc=Local" #替换成实际的
+llm:
+  addr: "llm:11028" #程序员节捏
+jwt:
+  secretKey: "giteval" #替换成实际的
+  timeout: 300
+
+
+
+
+
+
+
+
