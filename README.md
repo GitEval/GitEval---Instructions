@@ -121,6 +121,10 @@ GitEval-FrontEnd 是一个展示开发者评估信息的前端界面。该项目
 
 ---
 
+### GitEval-Backend
+
+![](img/Back.png)
+
 ## 如何运行程序？
 
 1. 将 `conf/config-example.yaml` 改为 `config.yaml`，然后配置相关信息
@@ -145,9 +149,12 @@ docker tag crpi-vgud82zncz8nwfuc.cn-hangzhou.personal.cr.aliyuncs.com/qianchengs
 3. 执行docker-compose up -d运行，执行前请确保拉取（或者构建）llm服务的镜像
 
 ---
+
+
 ## 团队分工
+
 | 团队成员 | 主要工作 |
 | -------- | -------- |
-| 孙俊楠    | 后端架构设计、llm部分设计,代码审查 |
-| 陈诚   |  |
+| 孙俊楠    | llm部分设计，后端llm相关部分业务代码实现，代码审查 |
+| 陈诚   | 后端架构设计，搜索，rank等业务功能的实现，部署 |
 | 单禹嘉     | 前端开发，包括前端架构设计、前端业务模块实现等 |
