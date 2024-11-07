@@ -3,17 +3,32 @@
 ## 项目简介
 该项目基于 GitHub 开源项目数据，开发一款开发者评估 Web 应用，通过计算开发者在项目中的贡献度和技术能力，生成其 TalentRank，并提供开发者的领域、所属国家（Nation）等信息。本项目包含三个主要服务：
 
-- **GitEval-FrontEnd**：提供前端界面，展示开发者评估结果。
-- **GitEval-backend**：处理业务逻辑和数据处理。
-- **GitEval-llm**：集成大语言模型，作为 backend 的依赖服务，负责预测、评价等工作。
+- [**GitEval-FrontEnd**](https://github.com/GitEval/GitEval-FrontEnd)：提供前端界面，展示开发者评估结果。
+- [**GitEval-Backend**](https://github.com/GitEval/GitEval-Backend)：处理业务逻辑和数据处理。
+- [**GitEval-llm**](https://github.com/GitEval/GitEval-llm)：集成大语言模型，作为 backend 的依赖服务，负责预测、评价等工作。
 
 ## 功能展示
 
 💽💽💽Demo: https://github.com/GitEval/GitEval-Instructions/blob/main/img/display.mov
 <br/>
-📢📢📢公网访问地址:http://47.92.102.209:5173/
+
+📢📢📢公网访问地址:http://47.92.102.209:5173/，偶尔会出现github授权超时问题。。。
 
 ---
+
+## 页面展示
+
+### 登录
+
+![](img/登陆.png)
+
+### 首页
+
+![](img/首页.png)
+
+### 评估
+
+![](img/大模型评估.png)
 
 ## 服务架构
 
@@ -138,7 +153,12 @@ docker pull crpi-vgud82zncz8nwfuc.cn-hangzhou.personal.cr.aliyuncs.com/qiancheng
 ##修改tag
 docker tag crpi-vgud82zncz8nwfuc.cn-hangzhou.personal.cr.aliyuncs.com/qianchengsijin4869/giteval:app giteval:v1
 ```
-如果需要，也可以拉取llm服务的镜像（已上传）
+​	同理,修改llm仓库中的config/dev.yaml文件为config/config.yaml并修改相关配置
+
+​	构建镜像:`docker build -t llm:v1 .`
+
+​	如果需要，也可以拉取llm服务的镜像（已上传）
+
 ```bash
 ##拉取镜像
 ##拉取镜像
@@ -146,7 +166,9 @@ docker pull crpi-vgud82zncz8nwfuc.cn-hangzhou.personal.cr.aliyuncs.com/qiancheng
 ##修改tag
 docker tag crpi-vgud82zncz8nwfuc.cn-hangzhou.personal.cr.aliyuncs.com/qianchengsijin4869/giteval:llm llm:v1
 ```
-3. 执行docker-compose up -d运行，执行前请确保拉取（或者构建）llm服务的镜像
+前端仓库构建:`docker build -t frontend:v1 .`
+
+3. 执行docker-compose up -d运行，执行前请确保构建好所有服务的镜像
 
 ---
 
