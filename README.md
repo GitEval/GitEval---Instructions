@@ -137,3 +137,11 @@ docker pull crpi-vgud82zncz8nwfuc.cn-hangzhou.personal.cr.aliyuncs.com/qiancheng
 docker tag crpi-vgud82zncz8nwfuc.cn-hangzhou.personal.cr.aliyuncs.com/qianchengsijin4869/giteval:llm llm:v1
 ```
 3. 执行docker-compose up -d运行，执行前请确保拉取（或者构建）llm服务的镜像
+
+---
+## 团队分工
+| 团队成员 | 主要工作 |
+| -------- | -------- |
+| 孙俊楠    | 后端架构设计、llm部分设计,代码审查 |
+| 陈诚   |  |
+| 单禹嘉     | 前端开发，包括前端架构设计、前端业务模块实现等 |
