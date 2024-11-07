@@ -41,9 +41,9 @@ GitEval-FrontEnd 是一个展示开发者评估信息的前端界面。该项目
 3. **详细评估信息**：提供开发者的详细评估信息，包括技能、经验、项目经历等，帮助用户全面了解开发者的能力。
 
 #### 技术栈：
-- 前端框架：React
-- 类型检查：TypeScript
-- UI 组件库：ShadCN-UI
+- 框架：React
+- 主要开发语言：TypeScript
+- UI 组件库：ShadCN-ui
 - 样式管理：Tailwind CSS
 
 ---
@@ -110,7 +110,7 @@ GitEval-FrontEnd 是一个展示开发者评估信息的前端界面。该项目
 
 ## 项目架构图
 该项目包含三个主要服务，每个服务有独立的仓库和配置。
-
+### GitEval-FrontEnd
 ![](img/FE.png)
 
 ---
