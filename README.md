@@ -138,7 +138,7 @@ GitEval-FrontEnd 是一个展示开发者评估信息的前端界面。该项目
 
 ### GitEval-Backend
 
-![](img/Back.png)
+![](img/Backend.png)
 
 ## 如何运行程序？
 
